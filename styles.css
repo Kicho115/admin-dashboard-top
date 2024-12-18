@@ -48,4 +48,11 @@ body {
 
 .posts {
     grid-row: 1 / -1;
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    gap: 10px;
+}
+
+.post-card {
+    background-color: white;
 }
