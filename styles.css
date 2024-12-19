@@ -75,10 +75,8 @@ a {
 }
 
 .main {
-    background-color: pink;
     display: grid;
     grid-template-rows: auto auto 1fr;
-    gap: 10px;
 }
 
 .main > * {
@@ -90,13 +88,14 @@ a {
     grid-auto-flow: column;
     grid-template-columns: 2fr 1fr;
     gap: 10em;
+    margin-bottom: 2em;
 }
 
 .header svg {
     fill: var(--dark-purple);
 }
 
-.header img {
+.header img, .sub-header img {
     border-radius: 50%;
 }
 
@@ -132,9 +131,49 @@ a {
     font-weight: 700;
 }
 
+.header-actions img {
+    height: 50px;
+}
+
 .sub-header {
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sub-header > div {
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.greeting > p {
+    font-size: 15px;
+}
+
+.username {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.actions > button {
+    border-style: none;
+    background-color: var(--purple);
+    color: var(--white-purple);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    width: 100px;
+    transition: all 0.5s ;
+
+    &:hover{
+        cursor: pointer;
+        scale: 1.1;
+        background-color: var(--dark-purple);
+    }
 }
 
 .content {
