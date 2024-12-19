@@ -182,7 +182,7 @@ a {
     padding: 2em 2em 2em 1.5em;
     background-color: var(--pale);
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1em;
 }
@@ -197,6 +197,7 @@ a {
 .content-header {
     grid-column: 1 / -1;
     align-self: flex-end;
+    margin-top: 1em;
 }
 
 .post-card {
@@ -271,28 +272,45 @@ a {
 
 .trending {
     display: grid;
+    grid-template-rows: auto 1fr;
     gap: 1em;
 }
 
 .trend-container {
     background-color: white;
     border-radius: 20px;
-    padding: 2em;
     display: grid;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
 }
 
 .trend {
+    padding: 0.5em 1em;
+    margin: 0 4em;
+    border-radius: 10px;
     display: grid;
     grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--pale);
+    }
 }
 
 .trend > img {
     border-radius: 50%;
 }
 
+.trend-username {
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .trend-desc {
+    font-size: 16px;
     color: gray;
+    margin-top: 0.5em;
 }
