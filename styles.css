@@ -88,7 +88,6 @@ a {
     grid-auto-flow: column;
     grid-template-columns: 2fr 1fr;
     gap: 10em;
-    margin-bottom: 2em;
 }
 
 .header svg {
@@ -136,6 +135,9 @@ a {
 }
 
 .sub-header {
+    padding: 15px 0px;
+    z-index: 1;
+    box-shadow: -1px 5px 4px -1px rgba(0, 0, 0, 0.2); 
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 1fr 1fr;
@@ -177,6 +179,8 @@ a {
 }
 
 .content {
+    padding-top: 2em;
+    background-color: var(--pale);
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
