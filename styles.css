@@ -179,8 +179,7 @@ a {
 }
 
 .content {
-    padding-top: 2em;
-    padding-left: 1.5em;
+    padding: 2em 2em 2em 1.5em;
     background-color: var(--pale);
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -195,9 +194,8 @@ a {
     row-gap: 2em;
 }
 
-.posts-header {
+.content-header {
     grid-column: 1 / -1;
-    height: 10px;
     align-self: flex-end;
 }
 
@@ -236,6 +234,39 @@ a {
 
 .announcements {
     display: grid;
+    grid-template-rows: 2em auto;
+    gap: 2em;
+}
+
+.announcement-container {
+    background-color: white;
+    padding: 1.5em 0;
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.announcement {
+    display: grid;
+    gap: 1em;
+    margin: 1em 2em;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--pale);
+    }
+}
+
+.announcement-container > hr {
+    margin: 0 4em;
+}
+
+/* announcement description*/
+.announcement > span {
+    color: gray;
 }
 
 .trending {
