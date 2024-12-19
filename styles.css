@@ -235,7 +235,7 @@ a {
 .announcements {
     display: grid;
     grid-template-rows: 2em auto;
-    gap: 2em;
+    gap: 1em;
 }
 
 .announcement-container {
@@ -271,9 +271,28 @@ a {
 
 .trending {
     display: grid;
+    gap: 1em;
+}
+
+.trend-container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 2em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .trend {
     display: grid;
     grid-auto-flow: column;
+    gap: 1em;
+}
+
+.trend > img {
+    border-radius: 50%;
+}
+
+.trend-desc {
+    color: gray;
 }
